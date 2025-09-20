@@ -57,7 +57,7 @@ export default function LineChart() {
   };
 
   return (
-    <Card title="Game Stats" className="h-72">
+    <Card title="Users Statistics" >
       <div className="h-56">
         <Chart type="line" data={data} options={options} />
       </div>

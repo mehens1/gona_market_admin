@@ -5,10 +5,10 @@
 /* Global tweaks */
 html,
 body,
-#root {
+:root {
   --primary-color: #307401;
   --secondary-color: #f38604;
-  --light-primary-color: ##98ba80;
+  --light-primary-color: #98ba80;
   --light-secondary-color: #f9c382;
   --lighter-primary-color: #eaf1e6;
   --lighter-secondary-color: #fef3e6;

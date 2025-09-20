@@ -1,26 +1,27 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       colors: {
-        mint: {
-          50: "#EEFDF6",
-          100: "#E6F7EC",
-          200: "#D9F1DE",
-          300: "#CFEFD6",
-          400: "#BFEED0",
-          500: "#CFEED6", // used as light panel background
-        },
-        brand: {
-          50: "#E9FBEF",
-          100: "#D7F8E0",
-          300: "#8EDD9E",
-          500: "#34D399",
-        },
-        ui: {
-          soft: "#F6F9FB",
-        },
+        primary: "#307401",
+        secondary: "#f38604",
+        "light-primary": "#98ba80",
+        "light-secondary": "#f9c382",
+        "lighter-primary": "#eaf1e6",
+        "lighter-secondary": "#fef3e6",
+        "dark-primary": "#183a01",
+        "dark-secondary": "#7a4302",
+        "darker-primary": "#0a1700",
+        "darker-secondary": "#180d00",
+        grey: "#727272",
+        "light-grey": "#b9b9b9",
+        "lighter-grey": "#f1f1f1",
+        "dark-grey": "#393939",
+        "darker-grey": "#0b0b0b",
       },
       boxShadow: {
         card: "0 6px 18px rgba(17,24,39,0.06)",

@@ -4,8 +4,8 @@ import { Link, useLocation } from "react-router-dom";
 const nav = [
   { label: "Dashboard", icon: "pi pi-chart-line", path: "/" },
   { label: "Users", icon: "pi pi-user", path: "/users" },
-  { label: "Products", icon: "pi pi-list", path: "/products" },
-  { label: "Settings", icon: "pi pi-cog", path: "/settings" },
+  { label: "Products", icon: "pi pi-list", path: "#" },
+  { label: "Settings", icon: "pi pi-cog", path: "#" },
 ];
 
 export default function Sidebar({ open = false, onClose = () => {} }) {
@@ -76,9 +76,7 @@ function SidebarContent({ onClose }) {
               to={i.path}
               onClick={onClose}
               className={`w-full primary-text flex items-center gap-3 px-3 py-2 rounded-lg transition ${
-                isActive
-                  ? "primary-bg lighter-primary-text p-4"
-                  : ""
+                isActive ? "primary-bg lighter-primary-text p-4" : ""
               }`}
             >
               <i className={`${i.icon} text-lg`} />
