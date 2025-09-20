@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global tweaks */
+html,
+body,
+#root {
+  --primary-color: #307401;
+  --secondary-color: #f38604;
+  --light-primary-color: ##98ba80;
+  --light-secondary-color: #f9c382;
+  --lighter-primary-color: #eaf1e6;
+  --lighter-secondary-color: #fef3e6;
+  --dark-primary-color: #183a01;
+  --dark-secondary-color: #7a4302;
+  --darker-primary-color: #0a1700;
+  --darker-secondary-color: #180d00;
+  --grey-color: #727272;
+  --light-grey-color: #b9b9b9;
+  --lighter-grey-color: #f1f1f1;
+  --dark-grey-color: #393939;
+  --darker-grey-color: #0b0b0b;
+
+  height: 100%;
+}
+
+/* background colors */
+.primary-bg {
+  background-color: var(--primary-color);
+}
+.secondary-bg {
+  background-color: var(--secondary-color);
+}
+.light-primary-bg {
+  background-color: var(--light-primary-color);
+}
+.light-secondary-bg {
+  background-color: var(--light-secondary-color);
+}
+.lighter-primary-bg {
+  background-color: var(--lighter-primary-color);
+}
+.lighter-secondary-bg {
+  background-color: var(--lighter-secondary-color);
+}
+.dark-primary-bg {
+  background-color: var(--dark-primary-color);
+}
+.dark-secondary-bg {
+  background-color: var(--dark-secondary-color);
+}
+.darker-primary-bg {
+  background-color: var(--darker-primary-color);
+}
+.darker-secondary-bg {
+  background-color: var(--darker-secondary-color);
+}
+.grey-bg {
+  background-color: var(--grey-color);
+}
+.light-grey-bg {
+  background-color: var(--light-grey-color);
+}
+.lighter-grey-bg {
+  background-color: var(--lighter-grey-color);
+}
+.dark-grey-bg {
+  background-color: var(--dark-grey-color);
+}
+.darker-grey-bg {
+  background-color: var(--darker-grey-color);
+}
+
+/* text colors */
+.primary-text {
+  color: var(--primary-color);
+}
+.secondary-text {
+  color: var(--secondary-color);
+}
+.light-primary-text {
+  color: var(--light-primary-color);
+}
+.light-secondary-text {
+  color: var(--light-secondary-color);
+}
+.lighter-primary-text {
+  color: var(--lighter-primary-color);
+}
+.lighter-secondary-text {
+  color: var(--lighter-secondary-color);
+}
+.dark-primary-text {
+  color: var(--dark-primary-color);
+}
+.dark-secondary-text {
+  color: var(--dark-secondary-color);
+}
+.darker-primary-text {
+  color: var(--darker-primary-color);
+}
+.darker-secondary-text {
+  color: var(--darker-secondary-color);
+}
+.grey-text {
+  color: var(--grey-color);
+}
+.light-grey-text {
+  color: var(--light-grey-color);
+}
+.lighter-grey-text {
+  color: var(--lighter-grey-color);
+}
+.dark-grey-text {
+  color: var(--dark-grey-color);
+}
+.darker-grey-text {
+  color: var(--darker-grey-color);
+}
+
+/* other styles */
+
+.card {
+  @apply bg-white rounded-xl shadow-card;
+}
+.delta-up {
+  @apply bg-emerald-50 text-emerald-700 rounded-full px-2 py-0.5 text-xs;
+}
+.delta-down {
+  @apply bg-red-50 text-red-600 rounded-full px-2 py-0.5 text-xs;
+}
+
+.create-game {
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(14, 22, 28, 0.06);
+}
